@@ -17,9 +17,11 @@ public class background : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (x < -25)
+        var sprite = GetComponent<SpriteRenderer>();
+
+        if (x < -sprite.size.x * transform.localScale.x)
         {
-            x = 25.0f;
+            x = sprite.size.x * transform.localScale.x;
         }
 
         x -= 0.01f;
