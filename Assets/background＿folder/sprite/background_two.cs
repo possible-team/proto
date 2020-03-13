@@ -18,7 +18,8 @@ public class background_two : MonoBehaviour
     {
         var sprite = GetComponent<SpriteRenderer>();
 
-        if (x < -sprite.size.x * transform.localScale.x)
+        //右の端の位置まで戻る
+        if (x < -sprite.size.x * transform.localScale.x )
         {
             x = sprite.size.x * transform.localScale.x;
         }

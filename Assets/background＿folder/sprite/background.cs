@@ -19,7 +19,8 @@ public class background : MonoBehaviour
     {
         var sprite = GetComponent<SpriteRenderer>();
 
-        if (x < -sprite.size.x * transform.localScale.x)
+        //右の端の位置まで戻るスプライトのサイズ×inspectorで変えた数
+        if (x < -sprite.size.x  * transform.localScale.x)
         {
             x = sprite.size.x * transform.localScale.x;
         }
