@@ -218,8 +218,8 @@ MonoBehaviour:
   shoot: 32
   angle_up: 119
   angle_down: 115
-  uni: {fileID: 1006470340392976670, guid: 47ef0dc3bdaf54e4baa71e3c8d7b7ae4, type: 3}
-  angle: {x: 1, y: 1}
+  uni: {fileID: 6418911394237109236, guid: 29e74ff9d74e409409a366897b10ba3a, type: 3}
+
   shoot_force: 1000
 --- !u!1 &421476574
 GameObject:
@@ -382,7 +382,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1749923085
+  m_SortingLayerID: 1140770095
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7905e2abc88efe74386100eef835777c, type: 3}
@@ -559,7 +559,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1749923085
+  m_SortingLayerID: 1140770095
   m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7905e2abc88efe74386100eef835777c, type: 3}
