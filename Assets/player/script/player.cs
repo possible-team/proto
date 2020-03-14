@@ -50,9 +50,10 @@ public class player : MonoBehaviour
             transform.position = w;
         }
 
-        if (collision.gameObject.CompareTag("Finish"))
+        if (collision.gameObject.CompareTag("gameover"))
         {
             Destroy(gameObject);
+            Debug.Log("当たった");
         }
     }
 }
