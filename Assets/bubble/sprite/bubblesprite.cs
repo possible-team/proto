@@ -8,10 +8,17 @@ public class bubblesprite : MonoBehaviour
     int destroy =1800;    //泡が消えるフレーム
     int fream = 0;  //泡が出現してからのフレーム
 
+    public AudioClip se;
+
     // Start is called before the first frame update
     void Start()
     {
 
+    }
+
+    private void OnDestroy()
+    {
+        AudioSource.PlayClipAtPoint(se, transform.position);
     }
 
     // Update is called once per frame
