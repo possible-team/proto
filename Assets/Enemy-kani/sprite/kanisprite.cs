@@ -36,11 +36,8 @@ public class kanisprite : MonoBehaviour
         {
             //InstantiateでGameObject生成
             //Instantiate(複製するGameObject,位置,回転)の順番で記載
-            Instantiate(bubble);
-            Instantiate(bubble);
-            Instantiate(bubble);
-            Instantiate(bubble);
-            Instantiate(bubble);
+            GameObject bubles = Instantiate(bubble);
+            bubles.transform.position = transform.position;
 
             //ctimeを0に戻す
             ctime = 0;
