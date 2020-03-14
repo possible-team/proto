@@ -5,7 +5,7 @@ using UnityEngine;
 public class kanisprite : MonoBehaviour
 {
     int ctime;  //生成してからの時間
-    int interval = 300;   //生成の間隔
+    int interval = 80;   //生成の間隔
 
     public GameObject bubble;
     int move = 0;
@@ -37,6 +37,11 @@ public class kanisprite : MonoBehaviour
             //InstantiateでGameObject生成
             //Instantiate(複製するGameObject,位置,回転)の順番で記載
             Instantiate(bubble);
+            Instantiate(bubble);
+            Instantiate(bubble);
+            Instantiate(bubble);
+            Instantiate(bubble);
+
             //ctimeを0に戻す
             ctime = 0;
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class bubblesprite : MonoBehaviour
 {
    
-    int destroy =600;    //泡が消えるフレーム
+    int destroy =1200;    //泡が消えるフレーム
     int fream = 0;  //泡が出現してからのフレーム
 
     // Start is called before the first frame update
