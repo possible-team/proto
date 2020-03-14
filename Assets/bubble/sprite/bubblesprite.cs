@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class bubblesprite : MonoBehaviour
 {
-    int ctime;  //生成してからの時間
-    int interval = 300;   //生成の間隔
-
+   
     int destroy =600;    //泡が消えるフレーム
     int fream = 0;  //泡が出現してからのフレーム
 
@@ -31,18 +29,6 @@ public class bubblesprite : MonoBehaviour
 
         myTransform.position = pos;  // 座標を設定
 
-
-        //生成の処理
-        //ctimeに経過時間を加算
-        ctime ++;
-        if (ctime  >= interval)
-        {
-            //InstantiateでGameObject生成
-            //Instantiate(複製するGameObject,位置,回転)の順番で記載
-            Instantiate(this, new Vector3(Random.Range(-0.2f, 0.2f), Random.Range(-0.2f, 0.2f), Random.Range(-1.0f, 1.0f)), Quaternion.identity);
-            //ctimeを0に戻す
-            ctime = 0;
-        }
 
 
         //消える処理
