@@ -10,7 +10,7 @@ public class player : MonoBehaviour
 
     public GameObject uni;
     private Vector2 angle = new Vector2(1.0f,0.0f);
-    public float shoot_force = 100.0f;
+    public float shoot_force = 1000.0f;
     // Start is called before the first frame update
     void Start()
     {
