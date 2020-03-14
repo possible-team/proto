@@ -26,8 +26,12 @@ public class uni : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("bubble"))
         {
-            Destroy(gameObject);
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("yuka"))
+        {
+            Destroy(gameObject);
         }
     }
 }
