@@ -40,4 +40,14 @@ public class player : MonoBehaviour
             unis.transform.position = transform.position;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("bubble"))
+        {
+            var w = transform.position;
+            w.x -= 0.5f;
+            transform.position = w;
+        }
+    }
 }

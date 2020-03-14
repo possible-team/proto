@@ -219,7 +219,7 @@ MonoBehaviour:
   angle_up: 119
   angle_down: 115
   uni: {fileID: 1006470340392976670, guid: 47ef0dc3bdaf54e4baa71e3c8d7b7ae4, type: 3}
-  shoot_force: 100
+  shoot_force: 2500
 --- !u!1 &421476574
 GameObject:
   m_ObjectHideFlags: 0
