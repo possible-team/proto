@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7178361574273350693}
   - component: {fileID: 8934546900082503280}
   - component: {fileID: -5952977471824942510}
+  - component: {fileID: -3711520115895561562}
   m_Layer: 0
   m_Name: nc35542
   m_TagString: bubble
@@ -116,3 +117,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &-3711520115895561562
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6418911394237109236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
