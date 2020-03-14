@@ -49,5 +49,10 @@ public class player : MonoBehaviour
             w.x -= 0.5f;
             transform.position = w;
         }
+
+        if (collision.gameObject.CompareTag("Finish"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
