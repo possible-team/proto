@@ -21,4 +21,13 @@ public class uni : MonoBehaviour
         }
         fream++;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("bubble"))
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+    }
 }
