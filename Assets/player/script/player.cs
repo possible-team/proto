@@ -37,7 +37,9 @@ public class player : MonoBehaviour
             GameObject unis = Instantiate(uni);
             Rigidbody2D rigi = unis.GetComponent<Rigidbody2D>();
             rigi.AddForce(angle * shoot_force);
-            unis.transform.position = transform.position;
+            var w = transform.position;
+            w.x += 1.0f;
+            unis.transform.position = w;
         }
     }
 
@@ -54,6 +56,14 @@ public class player : MonoBehaviour
         {
             Destroy(gameObject);
             Debug.Log("当たった");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("gameover"))
+        {
+            Destroy(gameObject);
         }
     }
 }
